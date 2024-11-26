@@ -26,16 +26,16 @@ public class RestAssuredAPITest {
             {
                 // Compare the transactionIDs
                 if(txid.equalsIgnoreCase("96d92f03000f625a38bf8cb91c01188a02b7972238cc6c4e0c6f334cf755004d")) {
+                    //Print the transactionID with the Index No
                     System.out.println("Transaction Found with " + txid +" On Index "+currentPage);
                 }
                 else if(txid.equalsIgnoreCase("6dd68336c085d5b7b694e2bf6f6c11bca589aea07b6f1c0232bd627c3d217074")) {
                     System.out.println("2nd Transaction Found with " + txid +" On Index "+currentPage);
-                    System.out.println(currentPage);
                 }
-                else
-                {
-                    System.out.println("Transaction ID Not Found");
-                }
+//                else
+//                {
+//                    System.out.println("Transaction ID Not Found");
+//                }
             }
             currentPage = currentPage+25;
         }
